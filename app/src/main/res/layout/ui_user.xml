@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_marginStart="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp"
+            app:tint="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_marginStart="12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_name"
+                style="@style/lbl.black"
+                android:text="@string/sample_name" />
+
+            <TextView
+                android:id="@+id/lbl_phone"
+                style="@style/lbl.grey"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:text="@string/sample_phone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_invite"
+            style="@style/btn.blue"
+            android:layout_marginEnd="20dp"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="@string/add_user"/>
+
+        <Button
+            android:id="@+id/btn_remove"
+            style="@style/btn.red"
+            android:layout_marginEnd="20dp"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="@string/remove"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+</LinearLayout>

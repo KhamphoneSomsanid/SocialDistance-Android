@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="2dp"
+        app:navigationIcon="@drawable/ic_arrow_left"
+        app:title="Profile"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp"/>
+
+        <ImageButton
+            android:id="@+id/imb_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:elevation="2dp"
+            android:src="@drawable/ic_edit"
+            android:tint="@color/white"
+            android:background="@drawable/back_blue_circle"/>
+    </RelativeLayout>
+
+    <com.laodev.socialdis.ui.CustomEditText
+        android:id="@+id/cet_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="Name"
+        app:srcLeft="@drawable/ic_person"
+        app:srcRight="@drawable/ic_edit"/>
+
+    <com.laodev.socialdis.ui.CustomEditText
+        android:id="@+id/cet_email"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcLeft="@android:drawable/ic_dialog_email"
+        app:isccp="false"
+        app:hint="@string/normal_email"
+        app:inputType="Email"/>
+
+    <com.laodev.socialdis.ui.CustomEditText
+        android:id="@+id/cet_phone"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hint="Phone Number"/>
+
+    <Button
+        style="@style/btn.white"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/update_profile"
+        android:onClick="onClickUpdateBtn"/>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/llt_login_send"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.laodev.socialdis.ui.CustomEditText
+            android:id="@+id/cet_email"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcLeft="@android:drawable/ic_dialog_email"
+            app:isccp="false"
+            app:hint="@string/normal_email"
+            app:inputType="Email"/>
+
+        <com.laodev.socialdis.ui.CustomEditText
+            android:id="@+id/cet_pass"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcLeft="@android:drawable/ic_lock_idle_lock"
+            app:isccp="false"
+            app:hint="@string/normal_pass"
+            app:inputType="Pass"/>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/chk_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorPrimary"
+                android:onClick="onClickForgotPassLbl"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/btn.white"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/normal_login"
+            android:onClick="onClickVerifyBtn"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/goto_register"
+            android:onClick="onClickRegisterLbl"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_device_now"
+            android:textColor="@color/colorPrimary"
+            android:onClick="onClickChangeDeviceLbl"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/lbl.grey"
+            android:layout_marginBottom="12dp"
+            android:text="@string/privacy_policy"
+            android:onClick="onClickPrivacyLbl"/>
+    </LinearLayout>
+</LinearLayout>

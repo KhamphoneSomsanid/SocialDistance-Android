@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.CustomEditText">
+
+    <LinearLayout
+        style="@style/llt_input_back" >
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:src="@drawable/ic_phone"
+            style="@style/img_input_header"/>
+
+        <LinearLayout style="@style/llt_input_spec"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp_country"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:ccp_textSize="12dp"
+            app:ccp_contentColor="@color/grey"
+            app:ccpDialog_textColor="@color/white"
+            app:ccpDialog_backgroundColor="@color/colorPrimary"
+            app:ccpDialog_keyboardAutoPopup="false"
+            app:ccp_showNameCode="false"
+            app:ccp_defaultNameCode="US"/>
+
+        <EditText
+            android:id="@+id/txt_input"
+            android:hint="@string/normal_phone"
+            style="@style/txt_edit_text"/>
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_marginEnd="8dp"
+            style="@style/img_input_header"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+</LinearLayout>

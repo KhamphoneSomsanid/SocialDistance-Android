@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_marginStart="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp"
+            app:tint="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/lbl_status"
+                    style="@style/lbl.black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/danger"
+                    android:textColor="@color/red"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/lbl_time"
+                    style="@style/lbl.grey"
+                    android:textSize="12sp"
+                    android:text="@string/sample_time" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/lbl_name"
+                    style="@style/lbl.black"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:text="@string/sample_name" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/lbl_distance"
+                    style="@style/lbl.grey"
+                    android:textSize="12sp"
+                    android:text="@string/sample_distance" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl_location"
+                style="@style/lbl.grey"
+                android:textSize="12sp"
+                android:text="@string/sample_address" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_history"
+            android:tint="@color/red"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+</LinearLayout>

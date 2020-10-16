@@ -1,0 +1,109 @@
+{
+  "project_info": {
+    "project_number": "464464082447",
+    "firebase_url": "https://social-distance-da2ea.firebaseio.com",
+    "project_id": "social-distance-da2ea",
+    "storage_bucket": "social-distance-da2ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464464082447:android:44f7f7dd508dacc4e4957a",
+        "android_client_info": {
+          "package_name": "com.laodev.coviddistance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464464082447-5hq6emdgb8h044t1vsktfnikeif9htre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.coviddistance",
+            "certificate_hash": "ffb68b7a4eac858117cc57e64eba3a27ab63062d"
+          }
+        },
+        {
+          "client_id": "464464082447-o4dtkf41npan49euilt1n08og71j27p4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.coviddistance",
+            "certificate_hash": "e4e92e165038d7614566e3325ed50172bb7d6398"
+          }
+        },
+        {
+          "client_id": "464464082447-h3ir6avjd4lngnhacgg9beqltq0c641a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.coviddistance",
+            "certificate_hash": "216469bff82669153a20b974377e9723048924a6"
+          }
+        },
+        {
+          "client_id": "464464082447-17lr8pkho94s168nrl9q3ks7gat15tnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXN835cCT1uyLDXMXYR1sjrky9-b09kRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464464082447-17lr8pkho94s168nrl9q3ks7gat15tnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464464082447:android:5b4d1e7491a5698ee4957a",
+        "android_client_info": {
+          "package_name": "com.laodev.socialdis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464464082447-m3fqrste7r3bj0sgkb4o31uf12akshhg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.socialdis",
+            "certificate_hash": "ffb68b7a4eac858117cc57e64eba3a27ab63062d"
+          }
+        },
+        {
+          "client_id": "464464082447-43gelivajlmf0kd5v7sntbd74v4cvo2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laodev.socialdis",
+            "certificate_hash": "216469bff82669153a20b974377e9723048924a6"
+          }
+        },
+        {
+          "client_id": "464464082447-17lr8pkho94s168nrl9q3ks7gat15tnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXN835cCT1uyLDXMXYR1sjrky9-b09kRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464464082447-17lr8pkho94s168nrl9q3ks7gat15tnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

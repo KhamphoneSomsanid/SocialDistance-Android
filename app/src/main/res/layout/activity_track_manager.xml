@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TrackMangerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="2dp"
+        app:navigationIcon="@drawable/ic_arrow_left"
+        app:title="@string/tracking"
+        app:titleTextColor="@color/white"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="30dp"
+                style="@style/lbl.black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/warning" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/warning_color" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/viw_warning"
+                    android:layout_marginEnd="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#ffff00"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/warning_distance" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/lbl_warning"
+                    style="@style/lbl.black"
+                    android:layout_marginEnd="30dp"
+                    android:text="5 m" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="30dp"
+                style="@style/lbl.black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/danger" />
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/damage_color" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/viw_damage"
+                    android:layout_marginEnd="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#ff0000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/lbl.black"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/damage_distance" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/lbl_damage"
+                    style="@style/lbl.black"
+                    android:layout_marginEnd="30dp"
+                    android:text="2 m" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="30dp"
+                        style="@style/lbl.black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="@string/frequence_time" />
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="40dp"
+                        style="@style/lbl.black"
+                        android:text="@string/frequence_detail"
+                        android:textColor="@color/grey"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl_freq_time"
+                    style="@style/lbl.black"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="30dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/sample_freq_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="30dp"
+                        style="@style/lbl.black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="@string/unit" />
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="40dp"
+                        style="@style/lbl.black"
+                        android:text="You can set the distance unit in here."
+                        android:textColor="@color/grey"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl_unit"
+                    style="@style/lbl.black"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="30dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/meter"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

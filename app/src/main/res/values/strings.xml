@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Social.D.M</string>
+
+    <string name="add_teams">Add Teams</string>
+    <string name="add_user">Add Team</string>
+
+    <string name="damage_color">Danger Color</string>
+    <string name="damage_distance">Danger Distance</string>
+
+    <string name="default_sound">Go to Notification Setting</string>
+    <string name="dia_color_title">Please choose color</string>
+    <string name="empty_user">There are no users available to add to the team.</string>
+
+    <string name="frequence_detail">You can set the frequence time for tracking devices in here.</string>
+    <string name="frequence_time">Frequence Time</string>
+
+    <string name="invitation_text">Hey, I found this LaoApp!, cool chatting application, come join me here. https://play.google.com/store/apps/details?id=%s</string>
+    <string name="invitation_title">Social Distance Invitation</string>
+
+    <string name="login_resend_code">Resend Code</string>
+    <string name="login_verify_detail">Enter the verification code to send to Verification code</string>
+    <string name="login_verify_title">Verification</string>
+
+    <string name="normal_email">Email</string>
+    <string name="normal_login">Login</string>
+    <string name="normal_phone">Phone Number</string>
+
+    <string name="notification_allow">Notification Allow</string>
+    <string name="notification_channel_id" translatable="false">channel_01</string>
+    <string name="notification_setting">Notification Setting</string>
+    <string name="notification_sound">Sound</string>
+    <string name="notification_vibrate">Vibrate</string>
+
+    <string name="pgr_connect_server">Connecting …</string>
+
+    <string name="privacy_and_policy">Privacy &amp; Policy</string>
+    <string name="privacy_policy"><![CDATA[User Agreement Privacy & Policy]]></string>
+
+    <string name="sample_address">Unknown Region</string>
+    <string name="sample_distance">2.5 m</string>
+    <string name="sample_freq_time">60 s</string>
+    <string name="sample_name">Display Name</string>
+    <string name="sample_phone">+0123456789</string>
+    <string name="sample_time">2020–12–12 12:12:12</string>
+
+    <string name="search_nearby_run">Searching Nearby Social Distance</string>
+    <string name="search_nearby_stop">Stop Nearby Social Distance</string>
+
+    <string name="title_friends">Friends</string>
+    <string name="title_history">History</string>
+    <string name="title_home">Home</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_team">Team</string>
+
+    <string name="toast_phone_empty">The phone number is not exsited.</string>
+    <string name="toast_sent_code">Sent Code</string>
+
+    <string name="unit_feet">ft</string>
+    <string name="unit_meter">m</string>
+    <string name="unit">Unit</string>
+
+    <string name="warning_color">Warning Color</string>
+    <string name="warning_distance">Warning Distance</string>
+    <string name="warning">Warning</string>
+
+    <string name="agree">Agree</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose">Choose</string>
+    <string name="danger">Danger</string>
+    <string name="feet">Feet</string>
+    <string name="invite">Invite</string>
+    <string name="logout">Logout</string>
+    <string name="tracking">Tracking</string>
+    <string name="meter">Meter</string>
+    <string name="notification">Notification</string>
+    <string name="ok">OK</string>
+    <string name="rating_app">Rating App</string>
+    <string name="remove">Remove</string>
+    <string name="normal_pass">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="goto_register">If you have no account, <u>Click here.</u></string>
+    <string name="share_app">Share App</string>
+    <string name="team_user">Team User</string>
+    <string name="register">Register</string>
+    <string name="goto_login">If you have already an account, <u>Click here.</u></string>
+    <string name="expire_detail">Your account was expired.</string>
+    <string name="expire_title">Expired Account</string>
+    <string name="expire_free_member">Free Member</string>
+    <string name="membership">MemberShip</string>
+    <string name="buy_now">Buy now</string>
+    <string name="expire_prime_member">Prime Member</string>
+    <string name="change_device_now">Change Device Now</string>
+    <string name="change_detail">Do you want your device to be changed now?\nAfter changing, you can\'t use your account\non your before device.</string>
+    <string name="hint_change_device">The reason of changing device</string>
+    <string name="change_device">Change Device</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="prime_member">Prime Member</string>
+    <string name="my_qr_code">My QR Code</string>
+    <string name="home_title_status">Searching Nearby Social Distance</string>
+</resources>

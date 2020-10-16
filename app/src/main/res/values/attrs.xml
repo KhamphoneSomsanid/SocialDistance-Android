@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="srcLeft" format="reference" />
+        <attr name="hint" format="string" />
+        <attr name="inputType" format="string" />
+        <attr name="isccp" format="boolean" />
+        <attr name="srcRight" format="reference" />
+        <attr name="drawShow" format="boolean" />
+    </declare-styleable>
+</resources>
