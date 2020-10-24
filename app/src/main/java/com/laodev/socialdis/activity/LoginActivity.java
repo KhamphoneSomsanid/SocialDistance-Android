@@ -78,7 +78,11 @@ public class LoginActivity extends AppCompatActivity {
                                 SharedPreferenceUtil.setLoginRemember("", "", false);
                             }
                             SharedPreferenceUtil.saveCurrentUser(new Gson().toJson(userModel));
-                            AppUtil.showOtherActivity(LoginActivity.this, MainActivity.class, 0);
+                            if (SharedPreferenceUtil.getIntroStatus()) {
+                                AppUtil.showOtherActivity(LoginActivity.this, MainActivity.class, 0);
+                            } else {
+                                AppUtil.showOtherActivity(LoginActivity.this, IntroActivity.class, 0);
+                            }
                             finish();
                         } else {
                             AppUtil.showToast(LoginActivity.this, "Please check your email.");

@@ -24,7 +24,6 @@ public class SharedPreferenceUtil {
     private final static String DAMAGEDISTACE = "DAMAGEDISTACE";
     private final static String DAMAGECOLOR = "DAMAGECOLOR";
     private final static String VIBRATE = "VIBRATE";
-    private final static String SOUND = "SOUND";
     private final static String UNIT = "UNIT";
     private final static String TEAMUSER = "TEAMUSER";
     private final static String TRACKINGFREQUENCY = "TRACKINGFREQUENCY";
@@ -32,6 +31,7 @@ public class SharedPreferenceUtil {
     private final static String PREFEMAIL = "PREFEMAIL";
     private final static String PREFPASS = "PREFPASS";
     private final static String PREFREMEMBER = "PREFREMEMBER";
+    private final static String ISINTRO = "ISINTRO";
 
 
     private static SharedPreferences mSharedPreference;
@@ -193,6 +193,14 @@ public class SharedPreferenceUtil {
 
     public static String getPass() {
         return mSharedPreference.getString(PREFPASS, "");
+    }
+
+    public static boolean getIntroStatus() { return mSharedPreference.getBoolean(ISINTRO, false); }
+
+    public static void setIntroStatus(boolean flag) {
+        SharedPreferences.Editor editor = mSharedPreference.edit();
+        editor.putBoolean(ISINTRO, flag);
+        editor.apply();
     }
 
 }

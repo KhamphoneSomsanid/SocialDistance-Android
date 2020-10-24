@@ -100,4 +100,5 @@
     <string name="prime_member">Prime Member</string>
     <string name="my_qr_code">My QR Code</string>
     <string name="home_title_status">Searching Nearby Social Distance</string>
+    <string name="todo">TODO</string>
 </resources>

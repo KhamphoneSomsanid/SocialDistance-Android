@@ -8,8 +8,8 @@ android {
         applicationId "com.laodev.socialdis"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         archivesBaseName = "SocialDistance_" + versionName
@@ -64,6 +64,7 @@ dependencies {
 
     implementation 'com.pranavpandey.android:dynamic-toasts:3.2.0'
     implementation 'com.paypal.sdk:paypal-android-sdk:2.16.0'
+    implementation 'me.relex:circleindicator:2.1.4'
 }
 
 apply plugin: 'com.google.gms.google-services'

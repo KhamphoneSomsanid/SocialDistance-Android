@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class HttpUtil {
 
-    public static final String SERVER_URL = "http://socialdis.daxiao-itdev.com/";
+    public static final String SERVER_URL = "http://socialdistance.laodev.info/";
 
     public static final String BACKEND_URL = SERVER_URL + "Backend/";
     public static final String AVATAR_URL = SERVER_URL + "uploads/";
