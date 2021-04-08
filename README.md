@@ -1,4 +1,5 @@
-# SocialDistance
+# Covid-19 Distance
+The people should keep social distance for depend Covid-19
 Social Distance for Covid-19</br>
 
 ## App Logo</br>
